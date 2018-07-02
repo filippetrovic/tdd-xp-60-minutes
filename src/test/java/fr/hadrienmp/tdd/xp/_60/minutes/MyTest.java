@@ -10,7 +10,12 @@ public class MyTest {
         Assertions.assertThat(nombre%2).isEqualTo(0);
     }
 
+    @Test
+    public void shouldEndshWith2() {
+        int nombre = checkNumber();
+        Assertions.assertThat(nombre%10).isEqualTo(2);
+    }
     public int checkNumber(){
-        return 0;
+        return 12;
     }
 }
